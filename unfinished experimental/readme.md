@@ -1,0 +1,5 @@
+# SteamClient.py
+Attempt to use https://github.com/ValvePython/steam module for directly sending appids to play to Steam. Honestly seemed way to simple to work. Documentation was a little lack luster in regard to trying to refresh the client with games played, so no clue why it doesn't work but it definitely doesn't
+
+#WMI
+Very unfinished attempt to use ctype's Windows API to help check if Steam is hung so the app runners would not open and close games without Steam API recognizing it. Spent some decent time trying to figure out how to get the Steam PID directly from Windows API and with Windows types before realizing WMI could do it a lot simpler then just stopped there and never did anything with it. Would need to get handle from PID and pass that and WM_NULL to SendMessageTimeout() or IsHungAppWindow atleast according to https://stackoverflow.com/questions/2226859/is-there-a-way-in-windows-to-know-if-a-process-is-not-responding
